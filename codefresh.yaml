@@ -1,0 +1,9 @@
+Freestyle:
+  title: Running docker image
+  type: freestyle
+  working_directory: '${{CLONE_STEP_NAME}}'
+  arguments:
+    image: 'alpine:3.8'
+    commands:
+      - echo "Valera"
+      - echo "asdasd"
