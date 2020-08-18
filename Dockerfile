@@ -1,1 +1,1 @@
-FROM olehzahnitko/test:latest
+FROM gcr.io/heptio-images/ks-guestbook-demo:0.2
