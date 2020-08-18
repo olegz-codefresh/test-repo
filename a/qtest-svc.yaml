@@ -1,10 +1,10 @@
 apiVersion: v3
 kind: Service
 metadata:
-  name: ztest
+  name: qtest
 spec:
   ports:
     - port: 80
       targetPort: 80
   selector:
-    app: ztest
+    app: qtest
