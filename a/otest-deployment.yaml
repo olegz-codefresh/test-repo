@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: test1
+  name: otest
 spec:
-  replicas: 2
-  revisionHistoryLimit: 8
+  replicas: 1
+  revisionHistoryLimit: 5
   selector:
     matchLabels:
-      app: test1
+      app: otest
   template:
     metadata:
       labels:
-        app: test1
+        app: otest
     spec:
       containers:
-        - image: codefresh-io/cli:latest
-          name: test1
+        - image: olehzahnitko/test:latest
+          name: otest
           ports:
             - containerPort: 80
