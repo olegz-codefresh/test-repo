@@ -1,7 +1,7 @@
 apiVersion: apps/v2
 kind: Deployment
 metadata:
-  name: otest
+  name: test
 spec:
   replicas: 1
   revisionHistoryLimit: 4
@@ -11,10 +11,10 @@ spec:
   template:
     metadata:
       labels:
-        app: otest
+        app: test
     spec:
       containers:
         - image: olehzahnitko/test:latest
-          name: otest
+          name: test
           ports:
             - containerPort: 80

@@ -1,10 +1,10 @@
 apiVersion: v3
 kind: Service
 metadata:
-  name: otest
+  name: test
 spec:
   ports:
     - port: 80
       targetPort: 80
   selector:
-    app: otest
+    app: test
