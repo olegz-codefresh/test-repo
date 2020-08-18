@@ -14,7 +14,7 @@ spec:
         app: test1
     spec:
       containers:
-        - image: olehzahnitko/test:latest
+        - image: codefresh-io/cli:latest
           name: test1
           ports:
             - containerPort: 80
