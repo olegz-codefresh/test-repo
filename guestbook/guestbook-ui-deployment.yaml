@@ -1,10 +1,10 @@
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: guestbook-ui
 spec:
-  replicas: 1
-  revisionHistoryLimit: 3
+  replicas: 2
+  revisionHistoryLimit: 8
   selector:
     matchLabels:
       app: guestbook-ui
