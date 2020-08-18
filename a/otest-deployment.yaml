@@ -1,10 +1,10 @@
-apiVersion: apps/v1
+apiVersion: apps/v2
 kind: Deployment
 metadata:
   name: otest
 spec:
-  replicas: 1
-  revisionHistoryLimit: 5
+  replicas: 2
+  revisionHistoryLimit: 4
   selector:
     matchLabels:
       app: otest
