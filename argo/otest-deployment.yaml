@@ -4,7 +4,7 @@ metadata:
   name: otest
 spec:
   replicas: 1
-  revisionHistoryLimit: 5
+  revisionHistoryLimit: 4
   selector:
     matchLabels:
       app: otest
