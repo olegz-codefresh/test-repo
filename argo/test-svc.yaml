@@ -1,4 +1,4 @@
-apiVersion: v4
+apiVersion: v3
 kind: Service
 metadata:
   name: test
