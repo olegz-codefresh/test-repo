@@ -1,20 +1,20 @@
-apiVersion: apps/v2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: otest
+  name: qtest
 spec:
   replicas: 2
   revisionHistoryLimit: 4
   selector:
     matchLabels:
-      app: otest
+      app: qtest
   template:
     metadata:
       labels:
-        app: otest
+        app: qtest
     spec:
       containers:
         - image: olehzahnitko/test:latest
-          name: otest
+          name: qtest
           ports:
             - containerPort: 80
