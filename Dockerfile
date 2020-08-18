@@ -1,1 +1,1 @@
-FROM node:10.15.3-alpine
+FROM gcr.io/heptio-images/ks-guestbook-demo
