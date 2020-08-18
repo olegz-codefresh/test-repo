@@ -1,1 +1,2 @@
-FROM gcr.io/heptio-images/ks-guestbook-demo:0.2
+FROM node:12.13.0-alpine
+RUN echo hi

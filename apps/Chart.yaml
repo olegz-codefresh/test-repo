@@ -1,5 +1,0 @@
-apiVersion: v2
-appVersion: "2.0"
-description: Applications
-name: applications
-version: 0.2.0
