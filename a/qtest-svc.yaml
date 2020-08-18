@@ -1,7 +1,7 @@
 apiVersion: v3
 kind: Service
 metadata:
-  name: qtest
+  name: ztest
 spec:
   ports:
     - port: 80
