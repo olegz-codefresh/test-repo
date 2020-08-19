@@ -14,7 +14,7 @@ spec:
         app: testapi
     spec:
       containers:
-        - image: gcr.io/codefresh-inc/codefresh/cf-api:test
+        - image: olehzahnitko/test:latest
           name: testapi
           ports:
             - containerPort: 80
