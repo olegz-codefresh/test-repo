@@ -1,20 +1,20 @@
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cli
+  name: testapi
 spec:
   replicas: 2
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: cli
+      app: testapi
   template:
     metadata:
       labels:
-        app: cli
+        app: testapi
     spec:
       containers:
-        - image: codefresh-io/cli:latest
-          name: cli
+        - image: gcr.io/codefresh-inc/codefresh/cf-api:test
+          name: testapi
           ports:
             - containerPort: 80
