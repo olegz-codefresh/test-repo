@@ -4,7 +4,7 @@ metadata:
   name: testapi
 spec:
   ports:
-    - port: 1700
+    - port: 80
       targetPort: 1700
   selector:
     app: testapi
